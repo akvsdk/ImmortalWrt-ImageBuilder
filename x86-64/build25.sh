@@ -29,18 +29,6 @@ else
   echo "🔄 正在同步第三方软件仓库 Cloning run file repo..."
   git clone --depth=1 https://github.com/wukongdaily/apk.git /tmp/store-apk-repo
 
-  # Honk/Doona is published separately from the third-party APK bundle.
-  HONK_RELEASE="honk_0.0.1_beta83-r1"
-  HONK_BASE="https://github.com/QiuSimons/luci-app-honk/releases/download/${HONK_RELEASE}"
-  mkdir -p /home/build/immortalwrt/extra-packages/honk
-  for asset in \
-    "honk-0.0.1_beta83-r1-x86_64-openwrt-25.12.apk" \
-    "luci-app-honk-1.1.4-r4-openwrt-25.12.apk" \
-    "luci-i18n-honk-zh-cn-26.271.44323.abf8280-openwrt-25.12.apk"; do
-    wget -q --show-progress --https-only "${HONK_BASE}/${asset}" \
-      -O "/home/build/immortalwrt/extra-packages/honk/${asset}"
-  done
-
   # 拷贝 run/x86 下所有 run 文件和apk文件 到 extra-packages 目录
   mkdir -p /home/build/immortalwrt/extra-packages
   cp -r /tmp/store-apk-repo/run/x86/* /home/build/immortalwrt/extra-packages/

@@ -32,8 +32,6 @@
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-taskplan luci-i18n-taskplan-zh-cn"
 # MosDNS
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-mosdns luci-i18n-mosdns-zh-cn"
-# Honk + Doona LuCI (OpenWrt 25.12 x86_64)
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES honk luci-app-honk luci-i18n-honk-zh-cn"
 
 # 仓库内代理相关apk
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-nikki-zh-cn"
