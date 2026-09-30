@@ -26,12 +26,14 @@
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES clashoo luci-app-clashoo luci-i18n-clashoo-zh-cn"
 # 新增 Lucky大吉 by gdy666 & sirpdboy 
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-lucky lucky luci-i18n-lucky-zh-cn"
-# daed 升级到1.28.0
+# daed disabled for 2026-09-30 build
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-daed-zh-cn"
 # 任务设置 by sirpdboy
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-taskplan luci-i18n-taskplan-zh-cn"
 # MosDNS
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-mosdns luci-i18n-mosdns-zh-cn"
+# Honk + Doona LuCI (OpenWrt 25.12 x86_64)
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES honk luci-app-honk luci-i18n-honk-zh-cn"
 
 # 仓库内代理相关apk
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-nikki-zh-cn"
